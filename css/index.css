@@ -91,7 +91,7 @@ video {
 }
 html {
   font-size: 62.5%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 h1 {
   font-size: 5rem;
@@ -106,10 +106,68 @@ p,
 a {
   font-size: 2rem;
 }
+a {
+  text-decoration: none;
+}
 nav {
+  background-color: #333333;
+  color: #F3F3F3;
+  width: 100%;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div span {
+  color: #E84C3D;
+}
+nav a {
+  color: #F3F3F3;
+}
+@media (max-width: 1000px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+nav .navbar {
+  width: 70%;
+}
+@media (max-width: 800px) {
+  nav .navbar {
+    display: none;
+  }
+}
+nav .social-media {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  nav .social-media {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  nav .social-media {
+    width: 20%;
+  }
+}
+nav button {
+  display: none;
+  background-color: #333333;
+  color: #F3F3F3;
+  border: 0;
+}
+@media (max-width: 800px) {
+  nav button {
+    display: block;
+  }
 }
 .sectionOne {
   background-image: url("../images/home-page.jpg");
