@@ -109,63 +109,73 @@ a {
 a {
   text-decoration: none;
 }
-nav {
+header {
   background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
   color: #F3F3F3;
-  width: 100%;
-  height: 8vh;
+  width: 80%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav div {
+@media (max-width: 1400px) {
+  header nav {
+    width: 95%;
+  }
+}
+header nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav div span {
+header nav div span {
   color: #E84C3D;
 }
-nav a {
+header nav a {
   color: #F3F3F3;
 }
 @media (max-width: 1000px) {
-  nav a {
+  header nav a {
     font-size: 1.5rem;
   }
 }
-nav .navbar {
+header nav .navbar {
   width: 70%;
 }
 @media (max-width: 800px) {
-  nav .navbar {
+  header nav .navbar {
     display: none;
   }
 }
-nav .social-media {
+header nav .social-media {
   width: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
-  nav .social-media {
+  header nav .social-media {
     width: 20%;
   }
 }
 @media (max-width: 500px) {
-  nav .social-media {
+  header nav .social-media {
     width: 20%;
   }
 }
-nav button {
+header nav button {
   display: none;
   background-color: #333333;
   color: #F3F3F3;
   border: 0;
 }
 @media (max-width: 800px) {
-  nav button {
+  header nav button {
     display: block;
   }
 }
@@ -180,4 +190,18 @@ nav button {
 }
 .sectionTwo {
   text-align: center;
+}
+footer {
+  text-align: center;
+  background-color: #333333;
+  color: #F3F3F3;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.5rem;
+  }
 }
