@@ -1,17 +1,61 @@
+main {
+    background-color: @bright;
+}
+
 .sectionOne {
     background-image: url("../images/home-page.jpg");
     background-size: cover;
     width: 100%;
-    height: 1000px;
+    height: 60vw;
+    text-align: center;
 
     .flex-content(center, center);
+
+    .mainDiv {
+        width: 80%;
+    }
     
+    h2 {
+        color: @bright;
+
+    }
+    
+    p{
+        color: @bright;
+    }
+      
+    button{
+        .btn();
+        .btn-hover();
+    }      
 }
+    
+    
+    
 
 .sectionTwo {
+    
     text-align: center;
+    color: @dark;
+    width: 100%;
+    height: 10vw;
+    margin: 2% 0;
+
+    button{
+        .btn();
+        .btn-hover()
+    }
 }
 
 .sectionThree {
-    
+    text-align: center;
+    color: @dark;
+    width: 100%;
+
+    .texts {
+        width: 45%;
+    }
+    img{
+        width: 45%;
+    }
 }
