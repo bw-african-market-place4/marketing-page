@@ -18,44 +18,58 @@ main {
     h2 {
         color: @bright;
 
+        @media @tablet {
+            font-size: 3rem;
+        }
+
+        @media @mobile {
+            font-size: 2rem;
+        }
+
     }
     
     p{
         color: @bright;
+
+        @media @mobile {
+            font-size: 1.3rem;
+        }
     }
       
     button{
-        .btn();
-        .btn-hover();
+        .btn(@orange, @bright);
+        .btn-hover(@dark, @bright);
     }      
 }
-    
-    
-    
 
 .sectionTwo {
-    
+    background-color: @orange;
     text-align: center;
-    color: @dark;
-    width: 100%;
-    height: 10vw;
-    margin: 2% 0;
+    color: @bright;
+    padding-top: 1%;
 
     button{
-        .btn();
-        .btn-hover()
-    }
+        .btn(@dark, @bright);
+        .btn-hover(@bright, @dark);
+        margin: 2%;
+        @media @tablet {
+            margin: 3%;
+        }
+        @media @mobile {
+            margin: 5%;
+        }
+    }  
 }
 
 .sectionThree {
-    text-align: center;
     color: @dark;
     width: 100%;
 
-    .texts {
-        width: 45%;
-    }
-    img{
-        width: 45%;
-    }
+   
+    
 }
+    
+    
+    
+
+

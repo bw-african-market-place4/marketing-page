@@ -4,19 +4,20 @@
     align-items: @align;
 }
 
-.btn() {
+.btn(@bg-color, @text-color) {
     font-size: 2rem;
-    color: @bright;
-    background-color:@orange;
+    background-color:@bg-color;
+    color: @text-color;
     padding: 1.5% 3%;
     border: 1px solid @dark;
     border-radius: 2px;
     margin: 1%;
 }
 
-.btn-hover(){
+.btn-hover(@bg-color, @text-color){
     &:hover{
-        background-color: @dark;      
+        background-color: @bg-color;
+        color: @text-color;      
     }
 }
 
