@@ -16,7 +16,7 @@ main {
     }
     
     h2 {
-        color: @bright;
+        color:white;
 
         @media @tablet {
             font-size: 3rem;
@@ -29,7 +29,7 @@ main {
     }
     
     p{
-        color: @bright;
+        color: white;
 
         @media @mobile {
             font-size: 1.3rem;
@@ -62,9 +62,69 @@ main {
 }
 
 .sectionThree {
+    text-align: center;
     color: @dark;
     width: 100%;
+    margin-top: 2%;
 
+    .services{
+        width: 100%;
+        padding: 3%;
+
+        div{
+            width: 40%;
+
+            @media @tablet {
+                width: 90%;
+                padding: 2% 0;
+            }
+        }
+
+        img{
+            width: 45%;
+            @media @wide {
+                width: 50%;
+            }
+            @media @tablet {
+                width: 90%;
+                order: -1;
+            }
+            
+        }
+
+        button{
+            .btn(@orange, @bright);
+            .btn-hover(@dark, @bright);
+        }  
+
+        h3 {
+            @media @desktop{
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            @media @desktop{
+                font-size: 1.5rem;
+            }
+        }
+
+        .flex-content(space-evenly, center);
+
+        @media @wide {
+            padding: 2%;
+        }
+
+        @media @desktop {
+            padding: 1%;
+        }
+        
+        @media @tablet {
+            flex-direction: column;
+
+        }
+
+    }
    
     
 }
