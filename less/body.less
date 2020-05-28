@@ -11,12 +11,13 @@ main {
 
     .flex-content(center, center);
 
-    .mainDiv {
-        width: 80%;
+    .mainDiv { 
+        background: rgba(0, 0, 0, 0.4);
+        width: 60%;
     }
     
     h2 {
-        color:white;
+        color:@bright;
 
         @media @tablet {
             font-size: 3rem;
@@ -29,17 +30,19 @@ main {
     }
     
     p{
-        color: white;
+        color: @bright;
 
         @media @mobile {
             font-size: 1.3rem;
         }
     }
-      
+
     button{
         .btn(@orange, @bright);
         .btn-hover(@dark, @bright);
-    }      
+    }  
+      
+        
 }
 
 .sectionTwo {
