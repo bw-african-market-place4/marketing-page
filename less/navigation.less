@@ -7,11 +7,14 @@
         width: 95%;
         height: 70px;
 
+        
+        
+        .flex-content(space-between, center);
+        
         @media @wide {
             width: 95%;
         }
-        .flex-content(space-between, center);
-        
+
         div {
             .flex-content(space-between, center);
         }
@@ -80,7 +83,29 @@
         }
 
         
-        
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            @media @tablet {
+                order: -1;
+            }
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: @dark;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+            a{
+                display: block;
+            }
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
         button {
             display: none;
             background-color: @dark;
