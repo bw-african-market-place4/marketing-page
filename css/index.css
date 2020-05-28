@@ -112,13 +112,13 @@ a {
 bold {
   font-weight: 700;
 }
-header {
+.nav {
   background-color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header nav {
+.nav nav {
   color: #F3F3F3;
   width: 80%;
   height: 70px;
@@ -127,58 +127,58 @@ header nav {
   align-items: center;
 }
 @media (max-width: 1400px) {
-  header nav {
+  .nav nav {
     width: 95%;
   }
 }
-header nav div {
+.nav nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav div span {
+.nav nav div span {
   color: #E84C3D;
 }
-header nav a {
+.nav nav a {
   color: #F3F3F3;
 }
 @media (max-width: 1000px) {
-  header nav a {
+  .nav nav a {
     font-size: 1.5rem;
   }
 }
-header nav .navbar {
+.nav nav .navbar {
   width: 70%;
 }
 @media (max-width: 800px) {
-  header nav .navbar {
+  .nav nav .navbar {
     display: none;
   }
 }
-header nav .social-media {
+.nav nav .social-media {
   width: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
-  header nav .social-media {
+  .nav nav .social-media {
     width: 20%;
   }
 }
 @media (max-width: 500px) {
-  header nav .social-media {
+  .nav nav .social-media {
     width: 20%;
   }
 }
-header nav button {
+.nav nav button {
   display: none;
   background-color: #333333;
   color: #F3F3F3;
   border: 0;
 }
 @media (max-width: 800px) {
-  header nav button {
+  .nav nav button {
     display: block;
   }
 }
