@@ -120,7 +120,7 @@ bold {
 }
 .nav nav {
   color: #F3F3F3;
-  width: 80%;
+  width: 95%;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -136,39 +136,69 @@ bold {
   justify-content: space-between;
   align-items: center;
 }
-.nav nav div span {
+.nav nav h1 {
+  font-size: 3.5rem;
+}
+.nav nav span {
   color: #E84C3D;
 }
 .nav nav a {
   color: #F3F3F3;
+  text-decoration: none;
+}
+.nav nav a:hover {
+  color: #E84C3D;
 }
 @media (max-width: 1000px) {
   .nav nav a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 800px) {
+  .nav nav a {
+    font-size: 2rem;
+  }
+}
 .nav nav .navbar {
-  width: 70%;
+  width: 60%;
 }
 @media (max-width: 800px) {
   .nav nav .navbar {
     display: none;
   }
 }
+.nav nav .navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav nav .navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.nav nav .navbar .dropdown-content a {
+  display: block;
+}
+.nav nav .navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
 .nav nav .social-media {
-  width: 10%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
   .nav nav .social-media {
-    width: 20%;
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
   .nav nav .social-media {
-    width: 20%;
+    width: 60%;
   }
 }
 .nav nav button {
@@ -176,6 +206,10 @@ bold {
   background-color: #333333;
   color: #F3F3F3;
   border: 0;
+  font-size: 2rem;
+}
+.nav nav button:hover {
+  color: #E84C3D;
 }
 @media (max-width: 800px) {
   .nav nav button {
@@ -348,5 +382,135 @@ footer {
 @media (max-width: 500px) {
   footer p {
     font-size: 1.5rem;
+  }
+}
+.section1 {
+  color: #333333;
+  text-align: center;
+}
+.section1 h1 {
+  padding: 2% 0;
+}
+@media (max-width: 800px) {
+  .section1 h1 {
+    font-size: 4rem;
+    padding: 2% 0;
+  }
+}
+@media (max-width: 500px) {
+  .section1 h1 {
+    font-size: 3rem;
+  }
+}
+.section1 .the-challenge {
+  background-color: #E84C3D;
+  color: #F3F3F3;
+  padding: 3% 10%;
+}
+@media (max-width: 800px) {
+  .section1 .the-challenge {
+    padding: 4% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .section1 .the-challenge {
+    padding: 5% 2%;
+  }
+}
+@media (max-width: 800px) {
+  .section1 .the-challenge h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .section1 .the-challenge h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .section1 .the-challenge p {
+    font-size: 1.5rem;
+  }
+}
+.section2 {
+  color: #333333;
+  background-color: #F3F3F3;
+  width: 100%;
+  text-align: center;
+  padding: 3% 10%;
+}
+@media (max-width: 800px) {
+  .section2 {
+    padding: 4% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .section2 {
+    padding: 5% 2%;
+  }
+}
+@media (max-width: 800px) {
+  .section2 h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .section2 h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .section2 p {
+    font-size: 1.5rem;
+  }
+}
+.section3 {
+  color: #333333;
+  background-color: #F3F3F3;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .section3 h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .section3 h3 {
+    font-size: 2rem;
+  }
+}
+.section3 .our-approach {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section3 .our-approach div {
+  margin: 3%;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .section3 .our-approach div {
+    width: 90%;
+  }
+}
+.section3 .our-approach h4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .section3 .our-approach h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .section3 .our-approach p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .section3 .our-approach {
+    flex-direction: column;
   }
 }
