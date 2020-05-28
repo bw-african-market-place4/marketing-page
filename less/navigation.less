@@ -1,0 +1,61 @@
+.nav {
+    background-color:@dark;
+    .flex-content(center, center);
+    nav {
+         
+        color: @bright;
+        width: 80%;
+        height: 70px;
+
+        @media @wide {
+            width: 95%;
+        }
+        .flex-content(space-between, center);
+        
+        div {
+            .flex-content(space-between, center);
+            span {
+                color: @orange;
+            }
+        }
+        
+        a {
+            color: #F3F3F3;
+            @media @desktop {
+                font-size: 1.5rem;
+            }
+        }
+    
+        .navbar{
+            width: 70%;
+            @media @tablet {
+                display: none;
+            }
+        }
+        
+        .social-media{
+            width: 10%;
+            .flex-content(space-around, center);
+    
+            @media @tablet {
+                width: 20%;
+            }
+            @media @mobile {
+                width: 20%;
+            }
+        }
+
+        
+        
+        button {
+            display: none;
+            background-color: @dark;
+            color: @bright;
+            border: 0;
+            @media @tablet {
+                display: block;
+            }
+        }
+      
+    }
+}

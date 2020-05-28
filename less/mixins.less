@@ -1,0 +1,23 @@
+.flex-content(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn(@bg-color, @text-color) {
+    font-size: 2rem;
+    background-color:@bg-color;
+    color: @text-color;
+    padding: 1.5% 3%;
+    border: 1px solid @dark;
+    border-radius: 2px;
+    margin: 1%;
+}
+
+.btn-hover(@bg-color, @text-color){
+    &:hover{
+        background-color: @bg-color;
+        color: @text-color;      
+    }
+}
+
