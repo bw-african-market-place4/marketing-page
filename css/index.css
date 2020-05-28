@@ -253,10 +253,11 @@ main {
   align-items: center;
 }
 .sectionOne .mainDiv {
-  width: 80%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 60%;
 }
 .sectionOne h2 {
-  color: white;
+  color: #F3F3F3;
 }
 @media (max-width: 800px) {
   .sectionOne h2 {
@@ -269,7 +270,7 @@ main {
   }
 }
 .sectionOne p {
-  color: white;
+  color: #F3F3F3;
 }
 @media (max-width: 500px) {
   .sectionOne p {
