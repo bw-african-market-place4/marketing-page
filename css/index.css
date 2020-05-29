@@ -148,6 +148,7 @@ bold {
 }
 .nav nav a:hover {
   color: #E84C3D;
+  transition: all 0.5s ease;
 }
 @media (max-width: 1000px) {
   .nav nav a {
@@ -287,6 +288,7 @@ main {
   margin: 1%;
 }
 .sectionOne button:hover {
+  transition: all 0.5s ease;
   background-color: #333333;
   color: #F3F3F3;
 }
@@ -307,6 +309,7 @@ main {
   margin: 2%;
 }
 .sectionTwo button:hover {
+  transition: all 0.5s ease;
   background-color: #F3F3F3;
   color: #333333;
 }
@@ -366,6 +369,7 @@ main {
   margin: 1%;
 }
 .sectionThree .services button:hover {
+  transition: all 0.5s ease;
   background-color: #333333;
   color: #F3F3F3;
 }
